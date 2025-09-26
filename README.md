@@ -42,8 +42,6 @@
 2022.08.18 - 1.0.3 配置文件中添加禁用的世界
 2022.12.22 - 1.0.4 修改api version, 更新kotlin版本
 2025.09.26 - 1.1.3 重大更新：升级到Paper API 1.21，支持Java 21，兼容Folia多线程服务端并兼容新生代Paper插件调用
+2025.09.26 - 1.1.4 移除bStats统计支持，简化插件代码
 ```
 
-## bstats
-
-![bstats](https://bstats.org/signatures/bukkit/ViewSlimeChunk.svg)

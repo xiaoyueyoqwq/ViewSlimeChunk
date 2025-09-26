@@ -6,7 +6,7 @@ plugins {
 }
 
 group = "top.e404"
-version = "1.1.3"
+version = "1.1.4"
 
 repositories {
     mavenLocal()
@@ -23,9 +23,7 @@ dependencies {
     compileOnly("io.papermc.paper:paper-api:1.21-R0.1-SNAPSHOT")
     // kotlin standard library - 需要显式包含以便打包
     implementation(kotlin("stdlib"))
-    // bstats - 使用不需要重定位的版本
-    implementation("org.bstats:bstats-base:3.1.0")
-    implementation("org.bstats:bstats-bukkit:3.1.0")
+    // bstats支持已移除
 }
 
 tasks.withType<KotlinCompile> {

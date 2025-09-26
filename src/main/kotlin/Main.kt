@@ -2,7 +2,6 @@ package top.e404.viewslimechunk
 
 import net.kyori.adventure.text.Component
 import net.kyori.adventure.text.serializer.legacy.LegacyComponentSerializer
-import org.bstats.bukkit.Metrics
 import org.bukkit.command.CommandSender
 import org.bukkit.entity.Player
 import org.bukkit.plugin.java.JavaPlugin
@@ -17,7 +16,6 @@ class Main : JavaPlugin() {
         lateinit var instance: Main
     }
 
-    private var metrics: Metrics? = null
     
     val prefix: String
         get() = Lang["prefix"]
@@ -47,8 +45,6 @@ class Main : JavaPlugin() {
         // 初始化更新检查器
         Updater.init()
         
-        // 初始化 bStats
-        initBStats()
         
         sendConsoleMessage("&f加载完成, 作者&b404E")
     }
@@ -57,29 +53,6 @@ class Main : JavaPlugin() {
         sendConsoleMessage("&f卸载完成, 作者&b404E")
     }
     
-    private fun initBStats() {
-        try {
-            // 创建一个自定义的bStats配置，禁用重定位检查
-            val constructor = Metrics::class.java.getDeclaredConstructor(
-                org.bukkit.plugin.java.JavaPlugin::class.java, 
-                Int::class.java,
-                Boolean::class.java
-            )
-            constructor.isAccessible = true
-            metrics = constructor.newInstance(this, 15069, false) as Metrics
-            logger.info("bStats initialized successfully")
-        } catch (e: NoSuchMethodException) {
-            // 回退到标准构造器
-            try {
-                metrics = Metrics(this, 15069)
-                logger.info("bStats initialized with standard constructor")
-            } catch (e2: Exception) {
-                logger.warning("Failed to initialize bStats: ${e2.message}")
-            }
-        } catch (e: Exception) {
-            logger.warning("Failed to initialize bStats: ${e.message}")
-        }
-    }
     
     fun sendConsoleMessage(message: String) {
         val component = LegacyComponentSerializer.legacyAmpersand().deserialize(message)
