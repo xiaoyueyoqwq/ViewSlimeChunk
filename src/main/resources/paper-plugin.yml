@@ -6,7 +6,7 @@ folia-supported: true
 java-version: 21
 authors: [ 404E ]
 description: "基于Paper API的史莱姆区块预览插件, 兼容Paper、Folia以及其他现代Minecraft服务端核心"
-website: "https://github.com/4o4E/ViewSlimeChunk"
+website: "https://github.com/xiaoyueyoqwq/ViewSlimeChunk"
 
 permissions:
   viewslimechunk.use:

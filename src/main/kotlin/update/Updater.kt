@@ -14,8 +14,8 @@ import java.net.http.HttpResponse
 import java.time.Duration
 
 object Updater : Listener {
-    private const val API_URL = "https://api.github.com/repos/4o4E/ViewSlimeChunk/releases/latest"
-    private const val GITHUB_URL = "https://github.com/4o4E/ViewSlimeChunk"
+    private const val API_URL = "https://api.github.com/repos/xiaoyueyoqwq/ViewSlimeChunk/releases/latest"
+    private const val GITHUB_URL = "https://github.com/xiaoyueyoqwq/ViewSlimeChunk"
     private var latestVersion: String? = null
     private var hasUpdate = false
     

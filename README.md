@@ -6,8 +6,8 @@
 >
 > 版本支持: `1.20.x`及更高版本, 兼容`1.21.x`，支持Paper和Folia服务端
 
-[![Release](https://img.shields.io/github/v/release/4o4E/ViewSlimeChunk?label=Release)](https://github.com/4o4E/ViewSlimeChunk/releases/latest)
-[![Downloads](https://img.shields.io/github/downloads/4o4E/ViewSlimeChunk/total?label=Download)](https://github.com/4o4E/ViewSlimeChunk/releases)
+[![Release](https://img.shields.io/github/v/release/xiaoyueyoqwq/ViewSlimeChunk?label=Release)](https://github.com/xiaoyueyoqwq/ViewSlimeChunk/releases/latest)
+[![Downloads](https://img.shields.io/github/downloads/xiaoyueyoqwq/ViewSlimeChunk/total?label=Download)](https://github.com/xiaoyueyoqwq/ViewSlimeChunk/releases)
 
 </div>
 
@@ -31,7 +31,7 @@
 
 ## 下载
 
-- [最新版](https://github.com/4o4E/ViewSlimeChunk/releases/latest)
+- [最新版](https://github.com/xiaoyueyoqwq/ViewSlimeChunk/releases/latest)
 
 ## 更新记录
 
@@ -43,5 +43,6 @@
 2022.12.22 - 1.0.4 修改api version, 更新kotlin版本
 2025.09.26 - 1.1.3 重大更新：升级到Paper API 1.21，支持Java 21，兼容Folia多线程服务端并兼容新生代Paper插件调用
 2025.09.26 - 1.1.4 移除bStats统计支持，简化插件代码
+2025.09.26 - 1.1.5 修复所有仓库链接指向，更新检查现在使用正确的仓库地址
 ```
 
