@@ -2,9 +2,9 @@
 
 # ViewSlimeChunk
 
-> 基于SpigotAPI的史莱姆区块预览插件, 适用于Spigot或Paper以及其他绝大多数Spigot的下游分支核心(不支持Bukkit)
+> 基于Paper API的史莱姆区块预览插件, 兼容Paper、Folia以及其他现代Minecraft服务端核心。使用现代化API和组件系统，支持多线程环境。
 >
-> 版本支持: `1.13.x`及更高版本, `1.18.x`和`1.19.x`经过测试
+> 版本支持: `1.20.x`及更高版本, 兼容`1.21.x`，支持Paper和Folia服务端
 
 [![Release](https://img.shields.io/github/v/release/4o4E/ViewSlimeChunk?label=Release)](https://github.com/4o4E/ViewSlimeChunk/releases/latest)
 [![Downloads](https://img.shields.io/github/downloads/4o4E/ViewSlimeChunk/total?label=Download)](https://github.com/4o4E/ViewSlimeChunk/releases)
@@ -41,6 +41,7 @@
 2022.07.03 - 1.0.2 优化插件，分离配置文件和语言文件
 2022.08.18 - 1.0.3 配置文件中添加禁用的世界
 2022.12.22 - 1.0.4 修改api version, 更新kotlin版本
+2025.09.26 - 1.1.3 重大更新：升级到Paper API 1.21，支持Java 21，兼容Folia多线程服务端并兼容新生代Paper插件调用
 ```
 
 ## bstats

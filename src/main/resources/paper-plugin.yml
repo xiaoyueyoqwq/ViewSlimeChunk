@@ -1,0 +1,17 @@
+name: ViewSlimeChunk
+version: '${project.version}'
+main: top.e404.viewslimechunk.Main
+api-version: '1.21'
+folia-supported: true
+java-version: 21
+authors: [ 404E ]
+description: "基于Paper API的史莱姆区块预览插件, 兼容Paper、Folia以及其他现代Minecraft服务端核心"
+website: "https://github.com/4o4E/ViewSlimeChunk"
+
+permissions:
+  viewslimechunk.use:
+    default: op
+    description: "允许使用指令/slime"
+  viewslimechunk.admin:
+    default: op
+    description: "允许使用指令/slimereload"
